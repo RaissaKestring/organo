@@ -1,10 +1,12 @@
 import './CampoTexto.css'
 // React usa letra maiuscula no comeco de variaveis
-const CampoTexto = () => {
+const CampoTexto = (props) => { // importa propriedades (label, placeholder) de App.js
     return (
         <div className="campo-texto">
-            <label>Nome</label>
-            <input placeholder='Digite o seu nome'/>
+            <label>
+                {props.label} 
+            </label>
+            <input placeholder={props.placeholder}/>
         </div>
     )
 }
