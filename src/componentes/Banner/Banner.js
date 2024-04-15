@@ -1,6 +1,6 @@
 import './Banner.css'
 
-function Banner() {
+export const Banner = () => {
     // JSX (como o react le isso tudo e transforma em DOM)
     // importar classe em React é className(importo a classe do css)
     return (
@@ -9,5 +9,3 @@ function Banner() {
         </header>
     )
 }
-
-export default Banner
