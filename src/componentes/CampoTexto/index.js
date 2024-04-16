@@ -6,7 +6,7 @@ const CampoTexto = (props) => { // importa propriedades (label, placeholder) de 
             <label>
                 {props.label} 
             </label>
-            <input placeholder={props.placeholder}/>
+            <input required={props.obrigatorio} placeholder={props.placeholder}/>
         </div>
     )
 }
