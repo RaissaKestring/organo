@@ -1,7 +1,6 @@
 import './ListaSuspensa.css'
 
 const ListaSuspensa = (props) => {
-    console.log(props.itens)
     // [].map (percorre a lista e retorna manipulado)
     // aparece sempre que tem uma interação em cima de uma lista renderizada na tela
     // pra cada item eu retorno uma option
@@ -10,7 +9,7 @@ const ListaSuspensa = (props) => {
     return(
         <div className="lista-suspensa">
             <label>{props.label}</label>
-            <select required={props.required}>
+            <select onChange={evento => props.aoAlterado(evento.target.value)} required={props.required} value={props.value}>
                 {props.itens.map(item => <option key={item}>{item}</option>)}
             </select>
         </div>
