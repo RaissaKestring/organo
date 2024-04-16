@@ -6,16 +6,6 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Fron-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     // Sempre que queremos que o componente reaja a alguma alteração no valor de uma variável e se renderize novamente, precisamos indicar isto utilizando o useState. Do contrário, o valor vai ser alterado mas o DOM não será atualizado.
 
     const [nome, setNome] = useState('')
@@ -60,7 +50,7 @@ const Formulario = (props) => {
                  <ListaSuspensa 
                  obrigatorio={true} 
                  label="Time" 
-                 itens={times}
+                 itens={props.times}
                  valor={time}
                  aoAlterado={valor => setTime(valor)}
                  
