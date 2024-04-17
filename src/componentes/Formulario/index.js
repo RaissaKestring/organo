@@ -21,6 +21,11 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        // para limpar os imputs do tipo texto digitados ao clicar em criar card
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
