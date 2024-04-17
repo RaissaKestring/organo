@@ -12,7 +12,7 @@ const Time = (props) => {
             <div className='colaboradores'>
 
                 {props.colaboradores.map((colaborador, index) => (
-            <Colaborador key={index} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem}/>
+            <Colaborador corDeFundo={props.corPrimaria} key={colaborador} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem}/>
         ))}
             </div>
         </section>
